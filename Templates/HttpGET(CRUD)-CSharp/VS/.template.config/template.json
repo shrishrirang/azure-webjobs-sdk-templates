@@ -1,0 +1,102 @@
+﻿{
+    "author": "Microsoft",
+    "classifications": [
+        "Azure Function"
+    ],
+    "name": "HttpGetCRUD",
+    "identity": "Azure.Function.CSharp.HttpGetCRUD",
+    "shortName": "HttpGetCRUD",
+    "tags": {
+        "language": "C#",
+        "type": "item"
+    },
+    "sourceName": "Company.Function",
+    "symbols": {
+        "FunctionName": {
+            "type": "parameter",
+            "description": "Name of the function",
+            "defaultValue": "HttpGetCRUDCSharp",
+            "replaces": "%FunctionName%"
+        },
+        "AccessRights": {
+            "type": "parameter",
+            "description": "Authorization level controls whether the function requires an API key and which key to use; Function uses a function key; Admin uses your master key. The function and master keys are found in the 'keys' management panel on the portal, when your function is selected.",
+            "datatype": "choice",
+            "choices": [
+                {
+                    "choice": "Function"
+                },
+                {
+                    "choice": "Anonymous"
+                },
+                {
+                    "choice": "Admin"
+                }
+            ],
+            "replaces": "%AuthLevel%",
+            "defaultValue": "Function"
+        },
+        "Connection": {
+            "description": "The name of the app setting containing your Storage connection.",
+            "type": "parameter",
+            "defaultValue": "",
+            "replaces": "%Connection%"
+        },
+        "TableName ": {
+            "description": "Table name in storage account where data will be written.",
+            "type": "parameter",
+            "defaultValue": "person",
+            "replaces": "%TableName%"
+        }
+    },
+    "primaryOutputs": [
+        {
+            "path": "Company.Function.csproj"
+        }
+    ],
+    "defaultName": "HttpGetCRUDCSharp",
+    "postActions": [
+        {
+            "Description": "Adding Reference to Microsoft.Azure.WebJobs Nuget package",
+            "ActionId": "B17581D1-C5C9-4489-8F0A-004BE667B814",
+            "ContinueOnError": "true",
+            "ManualInstructions": [
+                {
+                    "Text": "Manually add the reference to your project file"
+                }
+            ],
+            "args": {
+                "referenceType": "package",
+                "reference": "Microsoft.Azure.WebJobs",
+                "version": "2.0.1-alpha1-10692",
+                "projectFileExtensions": ".csproj"
+            }
+        },
+        {
+            "Description": "Adding Reference to Microsoft.Azure.WebJobs.Extensions.Http",
+            "ActionId": "B17581D1-C5C9-4489-8F0A-004BE667B814",
+            "ContinueOnError": "true",
+            "ManualInstructions": [
+                {
+                    "Text": "Manually add the reference to your project file"
+                }
+            ],
+            "args": {
+                "referenceType": "package",
+                "reference": "Microsoft.Azure.WebJobs.Extensions.Http",
+                "version": "1.0.0-alpha1-10436",
+                "projectFileExtensions": ".csproj"
+            }
+        },
+        {
+            "description": "Restore NuGet packages required by this project.",
+            "manualInstructions": [
+                {
+                    "text": "Run 'dotnet restore'"
+                }
+            ],
+            "actionId": "210D431B-A78B-4D2F-B762-4ED3E3EA9025",
+            "continueOnError": true
+        }
+    ]
+}

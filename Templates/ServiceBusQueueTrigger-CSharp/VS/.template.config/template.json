@@ -1,0 +1,99 @@
+﻿{
+    "author": "Microsoft",
+    "classifications": [
+        "Azure Function"
+    ],
+    "name": "ServiceBusQueueTrigger",
+    "identity": "Azure.Function.CSharp.ServiceBusQueueTrigger",
+    "shortName": "SBQueue",
+    "tags": {
+        "language": "C#",
+        "type": "item"
+    },
+    "sourceName": "Company.Function",
+    "symbols": {
+        "FunctionName": {
+            "type": "parameter",
+            "description": "Name of the function",
+            "defaultValue": "ServiceBusQueueTriggerCSharp",
+            "replaces": "%FunctionName%"
+        },
+        "Connection": {
+            "type": "parameter",
+            "description": "The name of the app setting containing your Service Bus connection string. The connection string must have Send rights.",
+            "defaultValue": "",
+            "replaces": "%Connection%"
+        },
+        "QueueName": {
+            "type": "parameter",
+            "description": "The queue to which the message will be sent",
+            "defaultValue": "myqueue",
+            "replaces": "%QueueName%"
+        },
+        "AccessRights": {
+            "type": "parameter",
+            "description": "The access rights of the Service Bus connection string. Set to Send if you're using a connection string that doesn't have Manage permissions.",
+            "datatype": "choice",
+            "choices": [
+                {
+                    "choice": "Manage"
+                },
+                {
+                    "choice": "Listen"
+                }
+            ],
+            "replaces": "%AccessRights%",
+            "defaultValue": "Manage"
+        }
+    },
+    "primaryOutputs": [
+        {
+            "path": "Company.Function.csproj"
+        }
+    ],
+    "defaultName": "ServiceBusQueueTriggerCSharp",
+    "postActions": [
+        {
+            "Description": "Adding Reference to Microsoft.Azure.WebJobs Nuget package",
+            "ActionId": "B17581D1-C5C9-4489-8F0A-004BE667B814",
+            "ContinueOnError": "true",
+            "ManualInstructions": [
+                {
+                    "Text": "Manually add the reference to your project file"
+                }
+            ],
+            "args": {
+                "referenceType": "package",
+                "reference": "Microsoft.Azure.WebJobs",
+                "version": "2.0.1-alpha1-10692",
+                "projectFileExtensions": ".csproj"
+            }
+        },
+        {
+            "Description": "Adding Reference to Microsoft.Azure.WebJobs.ServiceBus Nuget package",
+            "ActionId": "B17581D1-C5C9-4489-8F0A-004BE667B814",
+            "ContinueOnError": "true",
+            "ManualInstructions": [
+                {
+                    "Text": "Manually add the reference to your project file"
+                }
+            ],
+            "args": {
+                "referenceType": "package",
+                "reference": "Microsoft.Azure.WebJobs.ServiceBus",
+                "version": "2.0.1-alpha1-10692",
+                "projectFileExtensions": ".csproj"
+            }
+        },
+        {
+            "description": "Restore NuGet packages required by this project.",
+            "manualInstructions": [
+                {
+                    "text": "Run 'dotnet restore'"
+                }
+            ],
+            "actionId": "210D431B-A78B-4D2F-B762-4ED3E3EA9025",
+            "continueOnError": true
+        }
+    ]
+}

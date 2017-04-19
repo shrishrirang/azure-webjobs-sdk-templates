@@ -1,0 +1,83 @@
+﻿{
+    "author": "Microsoft",
+    "classifications": [
+        "Azure Function"
+    ],
+    "name": "EventHubTrigger",
+    "identity": "Azure.Function.CSharp.EventHubTrigger",
+    "shortName": "EventHub",
+    "tags": {
+        "language": "C#",
+        "type": "item"
+    },
+    "sourceName": "Company.Function",
+    "symbols": {
+        "FunctionName": {
+            "type": "parameter",
+            "defaultValue": "EventHubTriggerCSharp",
+            "replaces": "%FunctionName%"
+        },
+        "Connection": {
+            "description": "The name of the app setting containing your Event Hub connection string. The connection string must have Send permissions.",
+            "type": "parameter",
+            "defaultValue": "",
+            "replaces": "%Connection%"
+        },
+        "Path": {
+            "description": "This is the name of the event hub to which the event will be sent.",
+            "type": "parameter",
+            "defaultValue": "samples-workitems",
+            "replaces": "%Path%"
+        }
+    },
+    "primaryOutputs": [
+        {
+            "path": "Company.Function.csproj"
+        }
+    ],
+    "defaultName": "EventHubTriggerCSharp",
+    "postActions": [
+        {
+            "Description": "Adding Reference to Microsoft.Azure.WebJobs Nuget package",
+            "ActionId": "B17581D1-C5C9-4489-8F0A-004BE667B814",
+            "ContinueOnError": "true",
+            "ManualInstructions": [
+                {
+                    "Text": "Manually add the reference to your project file"
+                }
+            ],
+            "args": {
+                "referenceType": "package",
+                "reference": "Microsoft.Azure.WebJobs",
+                "version": "2.0.1-alpha1-10692",
+                "projectFileExtensions": ".csproj"
+            }
+        },
+        {
+            "Description": "Adding Reference to Microsoft.Azure.WebJobs.ServiceBus Nuget package",
+            "ActionId": "B17581D1-C5C9-4489-8F0A-004BE667B814",
+            "ContinueOnError": "true",
+            "ManualInstructions": [
+                {
+                    "Text": "Manually add the reference to your project file"
+                }
+            ],
+            "args": {
+                "referenceType": "package",
+                "reference": "Microsoft.Azure.WebJobs.ServiceBus",
+                "version": "2.0.1-alpha1-10692",
+                "projectFileExtensions": ".csproj"
+            }
+        },
+        {
+            "description": "Restore NuGet packages required by this project.",
+            "manualInstructions": [
+                {
+                    "text": "Run 'dotnet restore'"
+                }
+            ],
+            "actionId": "210D431B-A78B-4D2F-B762-4ED3E3EA9025",
+            "continueOnError": true
+        }
+    ]
+}

@@ -1,0 +1,77 @@
+{
+    "author": "Microsoft",
+    "classifications": [
+        "Azure Function"
+    ],
+    "name": "TimerTrigger",
+    "identity": "Azure.Function.CSharp.TimerTrigger",
+    "shortName": "Timer",
+    "tags": {
+        "language": "C#",
+        "type": "item"
+    },
+    "sourceName": "Company.Function",
+    "symbols": {
+        "FunctionName": {
+            "type": "parameter",
+            "defaultValue": "TimerTriggerCSharp",
+            "replaces": "%FunctionName%"
+        },
+        "Schedule": {
+            "type": "parameter",
+            "description": "Enter a cron expression of the format '{second} {minute} {hour} {day} {month} {day of week}' to specify the schedule.",
+            "defaultValue": "0 */5 * * * *",
+            "replaces": "%Schedule%"
+        }
+    },
+    "primaryOutputs": [
+        {
+            "path": "Company.Function.csproj"
+        }
+    ],
+    "defaultName": "TimerTriggerCSharp",
+    "postActions": [
+        {
+            "Description": "Adding Reference to Microsoft.Azure.WebJobs Nuget package",
+            "ActionId": "B17581D1-C5C9-4489-8F0A-004BE667B814",
+            "ContinueOnError": "true",
+            "ManualInstructions": [
+                {
+                    "Text": "Manually add the reference to your project file"
+                }
+            ],
+            "args": {
+                "referenceType": "package",
+                "reference": "Microsoft.Azure.WebJobs",
+                "version": "2.0.1-alpha1-10692",
+                "projectFileExtensions": ".csproj"
+            }
+        },
+        {
+            "Description": "Adding Reference to Microsoft.Azure.WebJobs.Extensions Nuget package",
+            "ActionId": "B17581D1-C5C9-4489-8F0A-004BE667B814",
+            "ContinueOnError": "true",
+            "ManualInstructions": [
+                {
+                    "Text": "Manually add the reference to your project file"
+                }
+            ],
+            "args": {
+                "referenceType": "package",
+                "reference": "Microsoft.Azure.WebJobs.Extensions",
+                "version": "2.0.1-alpha1-10436",
+                "projectFileExtensions": ".csproj"
+            }
+        },
+        {
+            "description": "Restore NuGet packages required by this project.",
+            "manualInstructions": [
+                {
+                    "text": "Run 'dotnet restore'"
+                }
+            ],
+            "actionId": "210D431B-A78B-4D2F-B762-4ED3E3EA9025",
+            "continueOnError": true
+        }
+    ]
+}
