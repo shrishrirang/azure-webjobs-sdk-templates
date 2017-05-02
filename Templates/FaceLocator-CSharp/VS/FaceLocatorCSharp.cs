@@ -20,8 +20,8 @@ namespace Company.Function
 {
     public static class FaceLocatorCSharp
     {
-        [FunctionName("%FunctionName%")]
-        public static async Task Run([BlobTrigger("%BlobPath%", Connection = "%BlobConnection%")]Stream image, string name, [Table("%TableName%", Connection = "%TableConnection%")]IAsyncCollector<FaceRectangle> outTable, TraceWriter log)
+        [FunctionName("FunctionNameValue")]
+        public static async Task Run([BlobTrigger("BlobPathValue", Connection = "BlobConnectionValue")]Stream image, string name, [Table("TableNameValue", Connection = "TableConnectionValue")]IAsyncCollector<FaceRectangle> outTable, TraceWriter log)
         {
             string result = await CallVisionAPI(image);
             log.Info(result);

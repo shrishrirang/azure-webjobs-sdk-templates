@@ -16,19 +16,19 @@
         "FunctionName": {
             "type": "parameter",
             "defaultValue": "EventHubTriggerCSharp",
-            "replaces": "%FunctionName%"
+            "replaces": "FunctionNameValue"
         },
         "Connection": {
             "description": "The name of the app setting containing your Event Hub connection string. The connection string must have Send permissions.",
             "type": "parameter",
             "defaultValue": "",
-            "replaces": "%Connection%"
+            "replaces": "ConnectionValue"
         },
         "Path": {
             "description": "This is the name of the event hub to which the event will be sent.",
             "type": "parameter",
             "defaultValue": "samples-workitems",
-            "replaces": "%Path%"
+            "replaces": "PathValue"
         }
     },
     "primaryOutputs": [

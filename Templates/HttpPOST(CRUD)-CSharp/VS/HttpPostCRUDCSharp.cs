@@ -11,8 +11,8 @@ namespace Company.Function
 {
     public static class HttpPostCRUDCSharp
     {
-        [FunctionName("%FunctionName%")]
-        public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.%AuthLevel%, "post")]HttpRequestMessage req, [Table("%TableName%", Connection = "%Connection%")]ICollector<Person> outTable, TraceWriter log)
+        [FunctionName("FunctionNameValue")]
+        public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.AuthLevelValue, "post")]HttpRequestMessage req, [Table("TableNameValue", Connection = "ConnectionValue")]ICollector<Person> outTable, TraceWriter log)
         {
             dynamic data = await req.Content.ReadAsAsync<object>();
             string name = data?.name;

@@ -9,9 +9,9 @@ namespace Company.Function
 {
     public static class HttpTriggerWithParametersCSharp
     {
-        [FunctionName("%FunctionName%")]
+        [FunctionName("FunctionNameValue")]
 
-        public static HttpResponseMessage Run([HttpTrigger(AuthorizationLevel.%AuthLevel%, "get", "post", Route = "HttpTriggerCSharp/name/{name}")]HttpRequestMessage req, string name, TraceWriter log)
+        public static HttpResponseMessage Run([HttpTrigger(AuthorizationLevel.AuthLevelValue, "get", "post", Route = "HttpTriggerCSharp/name/{name}")]HttpRequestMessage req, string name, TraceWriter log)
         {
             log.Info("C# HTTP trigger function processed a request.");
 

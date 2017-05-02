@@ -8,8 +8,8 @@ namespace Company.Function
 {
     public static class ImageResizerCSharp
     {
-        [FunctionName("%FunctionName%")]        
-        public static void Run([BlobTrigger("%ImageBlobPath%", Connection = "%ImageBlobConnection%")]Stream image, [Blob("%SmallImageBlobPath%", Connection = "%SmallImageBlobConnection%")]Stream imageSmall, [Blob("%MedImageBlobPath%", Connection = "%MedImageBlobConnection%")]Stream imageMedium)  // output blobs
+        [FunctionName("FunctionNameValue")]        
+        public static void Run([BlobTrigger("ImageBlobPathValue", Connection = "ImageBlobConnectionValue")]Stream image, [Blob("SmallImageBlobPathValue", Connection = "SmallImageBlobConnectionValue")]Stream imageSmall, [Blob("MedImageBlobPathValue", Connection = "MedImageBlobConnectionValue")]Stream imageMedium)  // output blobs
         {
             var imageBuilder = ImageResizer.ImageBuilder.Current;
             var size = imageDimensionsTable[ImageSize.Small];

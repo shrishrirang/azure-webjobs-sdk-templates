@@ -17,7 +17,7 @@
             "type": "parameter",
             "description": "Name of the function",
             "defaultValue": "HttpPostCRUDCSharp",
-            "replaces": "%FunctionName%"
+            "replaces": "FunctionNameValue"
         },
         "AccessRights": {
             "type": "parameter",
@@ -34,20 +34,20 @@
                     "choice": "Admin"
                 }
             ],
-            "replaces": "%AuthLevel%",
+            "replaces": "AuthLevelValue",
             "defaultValue": "Function"
         },
         "Connection": {
             "description": "The name of the app setting containing your Storage connection.",
             "type": "parameter",
             "defaultValue": "",
-            "replaces": "%Connection%"
+            "replaces": "ConnectionValue"
         },
         "TableName ": {
             "description": "Table name in storage account where data will be written.",
             "type": "parameter",
             "defaultValue": "person",
-            "replaces": "%TableName%"
+            "replaces": "TableNameValue"
         }
     },
     "primaryOutputs": [
@@ -98,22 +98,6 @@
             ],
             "actionId": "210D431B-A78B-4D2F-B762-4ED3E3EA9025",
             "continueOnError": true
-        },
-        {
-            "Description": "Adding Reference to Microsoft.CSharp",
-            "ActionId": "B17581D1-C5C9-4489-8F0A-004BE667B814",
-            "ContinueOnError": "true",
-            "ManualInstructions": [
-                {
-                    "Text": "Manually add the reference to your project file"
-                }
-            ],
-            "args": {
-                "referenceType": "framework",
-                "reference": "Microsoft.CSharp",
-                "version": "4.0.0.0",
-                "projectFileExtensions": ".csproj"
-            }
         }
     ]
 }

@@ -10,8 +10,8 @@ namespace Company.Function
 {
     public static class HttpGetCRUDCSharp
     {
-        [FunctionName("%FunctionName%")]
-        public static HttpResponseMessage Run([HttpTrigger(AuthorizationLevel.%AuthLevel%, "get")]HttpRequestMessage req, [Table("%TableName%", Connection = "%Connection%")]IQueryable<Person> inTable, TraceWriter log)
+        [FunctionName("FunctionNameValue")]
+        public static HttpResponseMessage Run([HttpTrigger(AuthorizationLevel.AuthLevelValue, "get")]HttpRequestMessage req, [Table("TableNameValue", Connection = "ConnectionValue")]IQueryable<Person> inTable, TraceWriter log)
         {
             var query = from person in inTable select person;
             foreach (Person person in query)

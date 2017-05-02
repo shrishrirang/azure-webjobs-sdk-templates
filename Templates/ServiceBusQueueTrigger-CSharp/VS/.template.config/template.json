@@ -17,19 +17,19 @@
             "type": "parameter",
             "description": "Name of the function",
             "defaultValue": "ServiceBusQueueTriggerCSharp",
-            "replaces": "%FunctionName%"
+            "replaces": "FunctionNameValue"
         },
         "Connection": {
             "type": "parameter",
             "description": "The name of the app setting containing your Service Bus connection string. The connection string must have Send rights.",
             "defaultValue": "",
-            "replaces": "%Connection%"
+            "replaces": "ConnectionValue"
         },
         "QueueName": {
             "type": "parameter",
             "description": "The queue to which the message will be sent",
             "defaultValue": "myqueue",
-            "replaces": "%QueueName%"
+            "replaces": "QueueNameValue"
         },
         "AccessRights": {
             "type": "parameter",
@@ -43,7 +43,7 @@
                     "choice": "Listen"
                 }
             ],
-            "replaces": "%AccessRights%",
+            "replaces": "AccessRightsValue",
             "defaultValue": "Manage"
         }
     },

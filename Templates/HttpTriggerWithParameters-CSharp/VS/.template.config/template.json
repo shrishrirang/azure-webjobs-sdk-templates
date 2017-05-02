@@ -17,7 +17,7 @@
             "type": "parameter",
             "description": "Name of the function",
             "defaultValue": "HttpTriggerWithParametersCSharp",
-            "replaces": "%FunctionName%"
+            "replaces": "FunctionNameValue"
         },
         "AccessRights": {
             "type": "parameter",
@@ -34,7 +34,7 @@
                     "choice": "Admin"
                 }
             ],
-            "replaces": "%AuthLevel%",
+            "replaces": "AuthLevelValue",
             "defaultValue": "Function"
         }
     },
@@ -42,8 +42,7 @@
         {
             "path": "Company.Function.csproj"
         }
-    ],
-    "defaultName": "%TemplateFullName%",
+    ],    
     "postActions": [
         {
             "Description": "Adding Reference to Microsoft.Azure.WebJobs Nuget package",

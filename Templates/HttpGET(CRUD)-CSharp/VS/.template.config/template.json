@@ -17,7 +17,7 @@
             "type": "parameter",
             "description": "Name of the function",
             "defaultValue": "HttpGetCRUDCSharp",
-            "replaces": "%FunctionName%"
+            "replaces": "FunctionNameValue"
         },
         "AccessRights": {
             "type": "parameter",
@@ -34,20 +34,20 @@
                     "choice": "Admin"
                 }
             ],
-            "replaces": "%AuthLevel%",
+            "replaces": "AuthLevelValue",
             "defaultValue": "Function"
         },
         "Connection": {
             "description": "The name of the app setting containing your Storage connection.",
             "type": "parameter",
             "defaultValue": "",
-            "replaces": "%Connection%"
+            "replaces": "ConnectionValue"
         },
         "TableName ": {
             "description": "Table name in storage account where data will be written.",
             "type": "parameter",
             "defaultValue": "person",
-            "replaces": "%TableName%"
+            "replaces": "TableNameValue"
         }
     },
     "primaryOutputs": [

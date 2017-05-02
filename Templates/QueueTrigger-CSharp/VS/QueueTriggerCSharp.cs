@@ -6,8 +6,8 @@ namespace Company.Function
 {
     public static class QueueTriggerCSharp
     {
-        [FunctionName("%FunctionName%")]        
-        public static void Run([QueueTrigger("%Path%", Connection = "%Connection%")]string myQueueItem, TraceWriter log)
+        [FunctionName("FunctionNameValue")]        
+        public static void Run([QueueTrigger("PathValue", Connection = "ConnectionValue")]string myQueueItem, TraceWriter log)
         {
             log.Info($"C# Queue trigger function processed: {myQueueItem}");
         }

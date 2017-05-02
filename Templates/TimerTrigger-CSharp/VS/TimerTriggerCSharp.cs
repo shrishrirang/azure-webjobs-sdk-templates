@@ -6,8 +6,8 @@ namespace Company.Function
 {
     public static class TimerTriggerCSharp
     {
-        [FunctionName("%FunctionName%")]
-        public static void Run([TimerTrigger("%Schedule%")]TimerInfo myTimer, TraceWriter log)
+        [FunctionName("FunctionNameValue")]
+        public static void Run([TimerTrigger("ScheduleValue")]TimerInfo myTimer, TraceWriter log)
         {
             log.Info($"C# Timer trigger function executed at: {DateTime.Now}");
         }

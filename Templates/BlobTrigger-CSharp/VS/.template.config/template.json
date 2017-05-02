@@ -17,19 +17,19 @@
             "type": "parameter",
             "description": "Name of the function",
             "defaultValue": "BlobTriggerCSharp",
-            "replaces": "%FunctionName%"
+            "replaces": "FunctionNameValue"
         },
         "Connection": {
             "description": "The name of the app setting containing your Storage connection.",
             "type": "parameter",
             "defaultValue": "",
-            "replaces": "%Connection%"
+            "replaces": "ConnectionValue"
         },
         "Path": {
             "description": "This is the path within your storage account that the trigger will monitor.",
             "type": "parameter",
             "defaultValue": "samples-workitems",
-            "replaces": "%Path%"
+            "replaces": "PathValue"
         }
     },
     "primaryOutputs": [

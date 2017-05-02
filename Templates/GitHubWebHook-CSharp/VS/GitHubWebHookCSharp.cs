@@ -10,7 +10,7 @@ namespace Company.Function
 {
     public static class GenericWebHookCSharp
     {
-        [FunctionName("%FunctionName%")]        
+        [FunctionName("FunctionNameValue")]        
         public static async Task<HttpResponseMessage> Run([HttpTrigger(WebHookType = "github")]HttpRequestMessage req, TraceWriter log)
         {
             log.Info("C# HTTP trigger function processed a request.");

@@ -6,8 +6,8 @@ namespace Company.Function
 {
     public static class ServiceBusTopicTriggerCSharp
     {
-        [FunctionName("%FunctionName%")]
-        public static void Run([ServiceBusTrigger("%TopicName%", "%SubscriptionName%", AccessRights.%AccessRights%, Connection = "%Connection%")]string mySbMsg, TraceWriter log)
+        [FunctionName("FunctionNameValue")]
+        public static void Run([ServiceBusTrigger("TopicNameValue", "SubscriptionNameValue", AccessRights.AccessRightsValue, Connection = "ConnectionValue")]string mySbMsg, TraceWriter log)
         {
             log.Info($"C# ServiceBus topic trigger function processed message: {mySbMsg}");
         }

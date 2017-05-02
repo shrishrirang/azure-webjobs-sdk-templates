@@ -10,7 +10,7 @@ namespace Company.Function
 {
     public static class GenericWebHookCSharp
     {
-        [FunctionName("%FunctionName%")]
+        [FunctionName("FunctionNameValue")]
         public static async Task<object> Run([HttpTrigger(WebHookType = "genericJson")]HttpRequestMessage req, TraceWriter log)
         {
             log.Info($"Webhook was triggered!");

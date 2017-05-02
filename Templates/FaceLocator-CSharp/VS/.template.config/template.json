@@ -17,31 +17,31 @@
             "type": "parameter",
             "description": "Name of the function",
             "defaultValue": "FaceLocatorCSharp",
-            "replaces": "%FunctionName%"
+            "replaces": "FunctionNameValue"
         },
         "BlobConnection": {
             "description": "The name of the app setting containing your Storage connection.",
             "type": "parameter",
             "defaultValue": "",
-            "replaces": "%BlobConnection%"
+            "replaces": "BlobConnectionValue"
         },
         "BlobPath": {
             "description": "This is the path within your storage account that the trigger will monitor.",
             "type": "parameter",
             "defaultValue": "images/{name}.jpg",
-            "replaces": "%BlobPath%"
+            "replaces": "BlobPathValue"
         },
         "TableConnection": {
             "description": "The name of the app setting containing your Storage connection.",
             "type": "parameter",
             "defaultValue": "",
-            "replaces": "%TableConnection%"
+            "replaces": "TableConnectionValue"
         },
         "TableName ": {
             "description": "Table name in storage account where data will be written.",
             "type": "parameter",
             "defaultValue": "faceRectangle",
-            "replaces": "%TableName%"
+            "replaces": "TableNameValue"
         }
     },
     "primaryOutputs": [

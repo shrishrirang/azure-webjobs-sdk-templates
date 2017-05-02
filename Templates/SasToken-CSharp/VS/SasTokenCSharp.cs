@@ -21,8 +21,8 @@ namespace Company.Function
 {
     public static class SasTokenCSharp
     {
-        [FunctionName("%FunctionName%")]
-        public static HttpResponseMessage Run([HttpTrigger(AuthorizationLevel.%AuthLevel%, "post")]Input input, [Blob("%Path%", FileAccess.Read, Connection = "%Connection%")]CloudBlobDirectory blobDirectory, TraceWriter log)
+        [FunctionName("FunctionNameValue")]
+        public static HttpResponseMessage Run([HttpTrigger(AuthorizationLevel.AuthLevelValue, "post")]Input input, [Blob("PathValue", FileAccess.Read, Connection = "ConnectionValue")]CloudBlobDirectory blobDirectory, TraceWriter log)
         {
             var permissions = SharedAccessBlobPermissions.Read; // default to read permissions
 
