@@ -5,6 +5,7 @@
     ],
     "name": "GenericWebHook",
     "identity": "Azure.Function.CSharp.GenericWebHook",
+    "groupIdentity": "Azure.Function.GenericWebHook",
     "shortName": "GenericWebHook",
     "tags": {
         "language": "C#",

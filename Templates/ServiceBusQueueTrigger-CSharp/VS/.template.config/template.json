@@ -5,6 +5,7 @@
     ],
     "name": "ServiceBusQueueTrigger",
     "identity": "Azure.Function.CSharp.ServiceBusQueueTrigger",
+    "groupIdentity": "Azure.Function.ServiceBusQueueTrigger",
     "shortName": "SBQueue",
     "tags": {
         "language": "C#",

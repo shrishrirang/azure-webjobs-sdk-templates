@@ -5,6 +5,7 @@
     ],
     "name": "BlobTrigger",
     "identity": "Azure.Function.CSharp.BlobTrigger",
+    "groupIdentity": "Azure.Function.BlobTrigger",
     "shortName": "Blob",
     "tags": {
         "language": "C#",

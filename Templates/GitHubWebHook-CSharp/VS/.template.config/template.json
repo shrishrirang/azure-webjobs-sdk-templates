@@ -5,6 +5,7 @@
     ],
     "name": "GitHubWebHook",
     "identity": "Azure.Function.CSharp.GitHubWebHook",
+    "groupIdentity": "Azure.Function.GitHubWebHook",
     "shortName": "GitHubWebHook",
     "tags": {
         "language": "C#",

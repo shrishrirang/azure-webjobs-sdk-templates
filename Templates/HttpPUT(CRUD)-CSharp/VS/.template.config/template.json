@@ -5,6 +5,7 @@
     ],
     "name": "HttpPutCRUD",
     "identity": "Azure.Function.CSharp.HttpPutCRUD",
+    "groupIdentity": "Azure.Function.HttpPutCRUD",
     "shortName": "HttpPutCRUD",
     "tags": {
         "language": "C#",

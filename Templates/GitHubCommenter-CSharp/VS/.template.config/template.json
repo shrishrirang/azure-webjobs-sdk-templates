@@ -5,6 +5,7 @@
     ],
     "name": "GitHubCommenter",
     "identity": "Azure.Function.CSharp.GitHubCommenter",
+    "groupIdentity": "Azure.Function.GitHubCommenter",
     "shortName": "GitHubComment",
     "tags": {
         "language": "C#",

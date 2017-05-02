@@ -5,6 +5,7 @@
     ],
     "name": "SasToken",
     "identity": "Azure.Function.CSharp.SasToken",
+    "groupIdentity": "Azure.Function.SasToken",
     "shortName": "SasToken",
     "tags": {
         "language": "C#",

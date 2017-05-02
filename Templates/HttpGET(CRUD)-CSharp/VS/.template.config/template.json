@@ -5,6 +5,7 @@
     ],
     "name": "HttpGetCRUD",
     "identity": "Azure.Function.CSharp.HttpGetCRUD",
+    "groupIdentity": "Azure.Function.HttpGetCRUD",
     "shortName": "HttpGetCRUD",
     "tags": {
         "language": "C#",

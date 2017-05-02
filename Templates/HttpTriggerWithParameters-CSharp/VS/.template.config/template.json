@@ -5,6 +5,7 @@
     ],
     "name": "HttpTriggerWithParameters",
     "identity": "Azure.Function.CSharp.HttpTriggerWithParameters",
+    "groupIdentity": "Azure.Function.HttpTriggerWithParameters",
     "shortName": "HttpParam",
     "tags": {
         "language": "C#",

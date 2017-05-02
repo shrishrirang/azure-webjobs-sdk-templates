@@ -5,6 +5,7 @@
     ],
     "name": "FaceLocator",
     "identity": "Azure.Function.CSharp.FaceLocator",
+    "groupIdentity": "Azure.Function.FaceLocator",
     "shortName": "FaceLocator",
     "tags": {
         "language": "C#",

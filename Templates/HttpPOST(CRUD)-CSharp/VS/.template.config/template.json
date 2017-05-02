@@ -5,6 +5,7 @@
     ],
     "name": "HttpPostCRUD",
     "identity": "Azure.Function.CSharp.HttpPostCRUD",
+    "groupIdentity": "Azure.Function.HttpPostCRUD",
     "shortName": "HttpPostCRUD",
     "tags": {
         "language": "C#",

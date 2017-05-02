@@ -5,6 +5,7 @@
     ],
     "name": "TimerTrigger",
     "identity": "Azure.Function.CSharp.TimerTrigger",
+    "groupIdentity": "Azure.Function.TimerTrigger",
     "shortName": "Timer",
     "tags": {
         "language": "C#",

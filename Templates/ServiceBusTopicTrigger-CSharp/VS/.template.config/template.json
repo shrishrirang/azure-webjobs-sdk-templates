@@ -5,6 +5,7 @@
     ],
     "name": "ServiceBusTopicTrigger",
     "identity": "Azure.Function.CSharp.ServiceBusTopicTrigger",
+    "groupIdentity": "Azure.Function.ServiceBusTopicTrigger",
     "shortName": "SBTopic",
     "tags": {
         "language": "C#",

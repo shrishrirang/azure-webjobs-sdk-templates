@@ -5,6 +5,7 @@
     ],
     "name": "QueueTrigger",
     "identity": "Azure.Function.CSharp.QueueTrigger",
+    "groupIdentity": "Azure.Function.QueueTrigger",
     "shortName": "Queue",
     "tags": {
         "language": "C#",

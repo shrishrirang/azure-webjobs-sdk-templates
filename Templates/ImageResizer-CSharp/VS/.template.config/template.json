@@ -5,6 +5,7 @@
     ],
     "name": "ImageResizer",
     "identity": "Azure.Function.CSharp.ImageResizer",
+    "groupIdentity": "Azure.Function.ImageResizer",
     "shortName": "ImageResizer",
     "tags": {
         "language": "C#",

@@ -5,6 +5,7 @@
     ],
     "name": "EventHubTrigger",
     "identity": "Azure.Function.CSharp.EventHubTrigger",
+    "groupIdentity": "Azure.Function.EventHubTrigger",
     "shortName": "EventHub",
     "tags": {
         "language": "C#",
