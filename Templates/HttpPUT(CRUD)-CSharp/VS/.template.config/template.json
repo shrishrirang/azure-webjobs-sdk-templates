@@ -25,13 +25,16 @@
             "datatype": "choice",
             "choices": [
                 {
-                    "choice": "Function"
+                    "choice": "Function",
+                    "description": "Function"
                 },
                 {
-                    "choice": "Anonymous"
+                    "choice": "Anonymous",
+                    "description": "Anonymous"
                 },
                 {
-                    "choice": "Admin"
+                    "choice": "Admin",
+                    "description": "Admin"
                 }
             ],
             "replaces": "AuthLevelValue",

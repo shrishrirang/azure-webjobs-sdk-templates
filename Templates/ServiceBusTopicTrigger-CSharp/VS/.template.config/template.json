@@ -43,10 +43,12 @@
             "datatype": "choice",
             "choices": [
                 {
-                    "choice": "Manage"
+                    "choice": "Manage",
+                    "description": "Manage"
                 },
                 {
-                    "choice": "Listen"
+                    "choice": "Listen",
+                    "description": "Listen"
                 }
             ],
             "replaces": "AccessRightsValue",

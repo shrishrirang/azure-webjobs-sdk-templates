@@ -25,13 +25,16 @@
             "datatype": "choice",
             "choices": [
                 {
-                    "choice": "Function"
+                    "choice": "Function",
+                    "description": "Function"
                 },
                 {
-                    "choice": "Anonymous"
+                    "choice": "Anonymous",
+                    "description": "Anonymous"
                 },
                 {
-                    "choice": "Admin"
+                    "choice": "Admin",
+                    "description": "Admin"
                 }
             ],
             "replaces": "AuthLevelValue",
@@ -42,7 +45,7 @@
         {
             "path": "Company.Function.csproj"
         }
-    ],    
+    ],
     "postActions": [
         {
             "Description": "Adding Reference to Microsoft.Azure.WebJobs Nuget package",
