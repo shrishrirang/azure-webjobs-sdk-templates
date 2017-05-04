@@ -11,8 +11,13 @@
         "language": "C#",
         "type": "item"
     },
-    "sourceName": "Company.Function",
+    "sourceName": "ImageResizerCSharp",
     "symbols": {
+        "namespace": {
+            "description": "namespace for the generated code",
+            "replaces": "Company.Function",
+            "type": "parameter"
+        },
         "FunctionName": {
             "type": "parameter",
             "description": "Name of the function",
@@ -58,7 +63,7 @@
     },
     "primaryOutputs": [
         {
-            "path": "Company.Function.csproj"
+            "path": "ImageResizerCSharp.cs"
         }
     ],
     "defaultName": "ImageResizerCSharp",

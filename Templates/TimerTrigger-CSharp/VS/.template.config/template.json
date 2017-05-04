@@ -11,8 +11,13 @@
         "language": "C#",
         "type": "item"
     },
-    "sourceName": "Company.Function",
+    "sourceName": "TimerTriggerCSharp",
     "symbols": {
+        "namespace": {
+            "description": "namespace for the generated code",
+            "replaces": "Company.Function",
+            "type": "parameter"
+        },
         "FunctionName": {
             "type": "parameter",
             "defaultValue": "TimerTriggerCSharp",
@@ -27,7 +32,7 @@
     },
     "primaryOutputs": [
         {
-            "path": "Company.Function.csproj"
+            "path": "TimerTriggerCSharp.cs"
         }
     ],
     "defaultName": "TimerTriggerCSharp",
