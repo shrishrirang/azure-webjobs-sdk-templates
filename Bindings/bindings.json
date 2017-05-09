@@ -441,6 +441,64 @@
             ]
         },
         {
+            "type": "sqlQueueTrigger",
+            "displayName": "$sqlQueueTrigger_displayName",
+            "direction": "trigger",
+            "enabledInTryMode": true,
+            "documentation": "$content=Documentation\\sqlQueueTrigger.md",
+            "settings": [
+                {
+                    "name": "name",
+                    "value": "string",
+                    "defaultValue": "myQueueItem",
+                    "required": true,
+                    "label": "$sqlQueueTrigger_name_label",
+                    "help": "$sqlQueueTrigger_name_help"
+                },
+                {
+                    "name": "databaseName",
+                    "value": "string",
+                    "defaultValue": "",
+                    "required": false,
+                    "label": "$sqlQueueTrigger_database_label",
+                    "help": "$sqlQueueTrigger_database_help"
+                },
+                {
+                    "name": "queueName",
+                    "value": "string",
+                    "defaultValue": "RECEIVERQUEUE1",
+                    "required": true,
+                    "label": "$sqlQueueTrigger_queueName_label",
+                    "help": "$sqlQueueTrigger_queueName_help"
+                },
+                {
+                    "name": "contractName",
+                    "value": "string",
+                    "defaultValue": "C",
+                    "required": true,
+                    "label": "$sqlQueueTrigger_contractName_label",
+                    "help": "$sqlQueueTrigger_contractName_help"
+                },
+                {
+                    "name": "messageType",
+                    "value": "string",
+                    "defaultValue": "VarChar(max)",
+                    "required": false,
+                    "label": "$sqlQueueTrigger_messageType_label",
+                    "help": "$sqlQueueTrigger_messageType_help"
+                },
+                {
+                    "name": "connection",
+                    "value": "string",
+                    "defaultValue": "AzureWebJobsSqlQueue",
+                    "required": true,
+                    "label": "$sqlQueueTrigger_connectionString_label",
+                    "help": "$sqlQueueTrigger_connectionString_help",
+                    "placeholder": "[variables('selectConnection')]"
+                }
+            ]
+        },
+        {
             "type": "apiHubFile",
             "displayName": "$apiHubFileIn_displayName",
             "direction": "in",
