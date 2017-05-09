@@ -450,7 +450,7 @@
                 {
                     "name": "name",
                     "value": "string",
-                    "defaultValue": "myQueueItem",
+                    "defaultValue": "msg",
                     "required": true,
                     "label": "$sqlQueueTrigger_name_label",
                     "help": "$sqlQueueTrigger_name_help"
@@ -466,7 +466,7 @@
                 {
                     "name": "queueName",
                     "value": "string",
-                    "defaultValue": "RECEIVERQUEUE1",
+                    "defaultValue": "MyQueue",
                     "required": true,
                     "label": "$sqlQueueTrigger_queueName_label",
                     "help": "$sqlQueueTrigger_queueName_help"
@@ -474,7 +474,7 @@
                 {
                     "name": "contractName",
                     "value": "string",
-                    "defaultValue": "C",
+                    "defaultValue": "MyContract",
                     "required": true,
                     "label": "$sqlQueueTrigger_contractName_label",
                     "help": "$sqlQueueTrigger_contractName_help"
