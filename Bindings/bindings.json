@@ -108,11 +108,10 @@
                 {
                     "name": "connection",
                     "value": "string",
-                    "resource": "EventHub",
+                    "defaultValue": "",
                     "required": true,
                     "label": "$eventHubTrigger_connection_label",
-                    "help": "$eventHubTrigger_connection_help",
-                    "placeholder": "[variables('selectConnection')]"
+                    "help": "$eventHubTrigger_connection_help"
                 },
                 {
                     "name": "cardinality",
@@ -284,11 +283,10 @@
                 {
                     "name": "connection",
                     "value": "string",
-                    "resource": "Storage",
+                    "defaultValue": "AzureWebJobsStorage",
                     "required": true,
                     "label": "[variables('storageConnStringLabel')]",
-                    "help": "[variables('appSettingsHelp')]",
-                    "placeholder": "[variables('selectConnection')]"
+                    "help": "[variables('appSettingsHelp')]"
                 }
             ]
         },
@@ -432,11 +430,10 @@
                 {
                     "name": "connection",
                     "value": "string",
-                    "resource": "Storage",
+                    "defaultValue": "",
                     "required": true,
                     "label": "[variables('storageConnStringLabel')]",
-                    "help": "[variables('appSettingsHelp')]",
-                    "placeholder": "[variables('selectConnection')]"
+                    "help": "[variables('appSettingsHelp')]"
                 }
             ]
         },
@@ -493,8 +490,7 @@
                     "defaultValue": "AzureWebJobsSqlQueue",
                     "required": true,
                     "label": "$sqlQueueTrigger_connectionString_label",
-                    "help": "$sqlQueueTrigger_connectionString_help",
-                    "placeholder": "[variables('selectConnection')]"
+                    "help": "$sqlQueueTrigger_connectionString_help"
                 }
             ]
         },
@@ -1017,11 +1013,10 @@
                 {
                     "name": "connection",
                     "value": "string",
-                    "resource": "EventHub",
+                    "defaultValue": "",
                     "required": true,
                     "label": "$serviceBusTrigger_connection_label",
-                    "help": "$serviceBusTrigger_connection_help",
-                    "placeholder": "[variables('selectConnection')]"
+                    "help": "$serviceBusTrigger_connection_help"
                 },
                 {
                     "name": "accessRights",
