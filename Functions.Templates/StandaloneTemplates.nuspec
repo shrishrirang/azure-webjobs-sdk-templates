@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Azure.Functions.UX.Templates</id>
+    <version>1.0.0</version>
+    <authors>Microsoft</authors>
+    <owners>Microsoft</owners>
+    <licenseUrl>https://github.com/Azure/azure-webjobs-sdk-templates/blob/dev/LICENSE.txt</licenseUrl>
+    <projectUrl>https://go.microsoft.com/fwlink/?linkid=848145</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Collection of templates for Azure Functions Portal</description>
+    <language>en-US</language>
+  </metadata>
+  <files>
+    <file src="Bindings/bindings.json" target="Bindings/bindings.json" />
+    <file src="Documentation/" target="" />
+    <file src="Resources/" target="" />
+    <file src="templates/BlobTrigger-CSharp/BlobTriggerCSharp.csx" target="templates/BlobTrigger-CSharp/BlobTriggerCSharp.csx" />
+    <file src="templates/BlobTrigger-CSharp/function.json" target="templates/BlobTrigger-CSharp/function.json" />
+    <file src="templates/BlobTrigger-CSharp/metadata.json" target="templates/BlobTrigger-CSharp/metadata.json" />
+    <file src="templates/BlobTrigger-CSharp/readme.md" target="templates/BlobTrigger-CSharp/readme.md" />
+    <file src="templates/BlobTrigger-CSharp/sample.dat" target="templates/BlobTrigger-CSharp/sample.dat" />
+    <file src="templates/QueueTrigger-CSharp/function.json" target="templates/QueueTrigger-CSharp/function.json" />
+    <file src="templates/QueueTrigger-CSharp/metadata.json" target="templates/QueueTrigger-CSharp/metadata.json" />
+    <file src="templates/QueueTrigger-CSharp/QueueTriggerCSharp.csx" target="templates/QueueTrigger-CSharp/run.csx" />
+    <file src="templates/QueueTrigger-CSharp/readme.md" target="templates/QueueTrigger-CSharp/readme.md" />
+    <file src="templates/QueueTrigger-CSharp/sample.dat" target="templates/QueueTrigger-CSharp/sample.dat" />
+    <file src="templates/TimerTrigger-CSharp/function.json" target="templates/TimerTrigger-CSharp/function.json" />
+    <file src="templates/TimerTrigger-CSharp/metadata.json" target="templates/TimerTrigger-CSharp/metadata.json" />
+    <file src="templates/TimerTrigger-CSharp/readme.md" target="templates/TimerTrigger-CSharp/readme.md" />
+    <file src="templates/TimerTrigger-CSharp/sample.dat" target="templates/TimerTrigger-CSharp/sample.dat" />
+    <file src="templates/TimerTrigger-CSharp/TimerTriggerCSharp.csx" target="templates/TimerTrigger-CSharp/run.csx" />
+  </files>
+</package>

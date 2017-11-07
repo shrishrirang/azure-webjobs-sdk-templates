@@ -44,6 +44,7 @@
     <None Include="Documentation\GraphWebhookTrigger.md" />
     <None Include="ItemTemplates.nuspec" />
     <None Include="ProjectTemplates.nuspec" />
+    <None Include="StandaloneTemplates.nuspec" />
     <None Include="ProjectTemplate\build.config\dotnetcli.host.json" />
     <None Include="ProjectTemplate\build.config\template.json" />
     <None Include="ProjectTemplate\host.json" />
@@ -260,6 +261,16 @@
   </Target>
   <Target Name="PkgInstall" DependsOnTargets="PortalTemplatesPkg">
     <Exec Command="..\tools\nuget.exe install Azure.Functions.Ux.Templates -Version $(TemplateVersion) -Source $(MSBuildProjectDirectory)\bin\Portal\Nuget -OutputDirectory .\bin\Portal\Release -ExcludeVersion" />
+  </Target>
+  <Target Name="StandaloneTemplatesPkg">
+    <Exec Command="..\tools\cli\dotnet.exe new -i .\" />
+    <Exec Command="..\tools\cli\dotnet.exe new functions -o .\bin\Standalone\temp --force" IgnoreExitCode="true" />
+    <Exec Command="..\tools\CodeFormatter\CodeFormatter.exe ..\tools\codeFormat.csproj /nocopyright  /rule-:NewLineAbove,ExplicitVisibility,IllegalHeaders,FieldNames,ExplicitThis,BraceNewLine,UsingLocation,UnicodeLiterals,ReadonlyFields /verbose" IgnoreExitCode="true" />
+    <Delete Files=".\bin\Standalone\Functions.Templates.csproj" />
+    <Exec Command="for /R .\bin\Standalone\temp\Templates\ %%x in (*.cs) do ren &quot;%%x&quot; *.csx" />
+    <Exec Command="..\tools\nuget.exe pack .\bin\Standalone\temp\StandaloneTemplates.nuspec -Version $(TemplateVersion) -OutputDirectory .\bin\Standalone\temp\nuget\" />
+    <Copy SourceFiles=".\bin\Standalone\temp\nuget\Azure.Functions.Ux.Templates.$(TemplateVersion).nupkg" DestinationFiles=".\bin\Standalone\Nuget\Azure.Functions.Ux.Templates.$(TemplateVersion).nupkg" />
+    <RemoveDir Directories=".\bin\Standalone\temp" />
   </Target>
   <Target Name="TestConfig" DependsOnTargets="CreateTemplateConfig;PkgInstall">
     <Exec Command="..\tools\CreateTemplateConfig\CreateTemplateConfig.exe $(MSBuildProjectDirectory)\bin\Portal\Release\Azure.Functions.Ux.Templates\ $(MSBuildProjectDirectory)\bin\Portal\Test" />
