@@ -1,0 +1,9 @@
+﻿{
+    "bindings": [
+        {
+            "type": "sqlQueueTrigger",
+            "name": "msg",
+            "direction": "in"
+        }
+    ]
+}

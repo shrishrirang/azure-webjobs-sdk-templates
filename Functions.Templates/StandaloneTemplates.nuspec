@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Azure.Functions.Ux.Templates</id>
+    <version>1.0.0</version>
+    <authors>Microsoft</authors>
+    <owners>Microsoft</owners>
+    <licenseUrl>https://github.com/Azure/azure-webjobs-sdk-templates/blob/dev/LICENSE.txt</licenseUrl>
+    <projectUrl>https://go.microsoft.com/fwlink/?linkid=848145</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Collection of templates for Azure Functions Portal</description>
+    <language>en-US</language>
+  </metadata>
+  <files>
+    <file src="Bindings/bindings.json" target="Bindings/bindings.json" />
+    <file src="Documentation/" target="" />
+    <file src="Resources/" target="" />
+    <file src="Templates/BlobTrigger-CSharp/function.json" target="Templates/BlobTrigger-CSharp/function.json" />
+    <file src="Templates/BlobTrigger-CSharp/metadata.json" target="Templates/BlobTrigger-CSharp/metadata.json" />
+    <file src="Templates/BlobTrigger-CSharp/readme.md" target="Templates/BlobTrigger-CSharp/readme.md" />
+    <file src="Templates/BlobTrigger-CSharp/BlobTriggerCSharp.csx" target="Templates/BlobTrigger-CSharp/run.csx" />
+    <file src="Templates/BlobTrigger-CSharp/sample.dat" target="Templates/BlobTrigger-CSharp/sample.dat" />
+    <file src="Templates/BlobTrigger-JavaScript/function.json" target="Templates/BlobTrigger-JavaScript/function.json" />
+    <file src="Templates/BlobTrigger-JavaScript/index.js" target="Templates/BlobTrigger-JavaScript/index.js" />
+    <file src="Templates/BlobTrigger-JavaScript/metadata.json" target="Templates/BlobTrigger-JavaScript/metadata.json" />
+    <file src="Templates/BlobTrigger-JavaScript/readme.md" target="Templates/BlobTrigger-JavaScript/readme.md" />
+    <file src="Templates/BlobTrigger-JavaScript/sample.dat" target="Templates/BlobTrigger-JavaScript/sample.dat" />    
+    <file src="Templates/QueueTrigger-CSharp/function.json" target="Templates/QueueTrigger-CSharp/function.json" />
+    <file src="Templates/QueueTrigger-CSharp/metadata.json" target="Templates/QueueTrigger-CSharp/metadata.json" />
+    <file src="Templates/QueueTrigger-CSharp/readme.md" target="Templates/QueueTrigger-CSharp/readme.md" />
+    <file src="Templates/QueueTrigger-CSharp/QueueTriggerCSharp.csx" target="Templates/QueueTrigger-CSharp/run.csx" />
+    <file src="Templates/QueueTrigger-CSharp/sample.dat" target="Templates/QueueTrigger-CSharp/sample.dat" />
+    <file src="Templates/QueueTrigger-FSharp/sample.dat" target="Templates/QueueTrigger-FSharp/sample.dat" />
+    <file src="Templates/QueueTrigger-JavaScript/function.json" target="Templates/QueueTrigger-JavaScript/function.json" />
+    <file src="Templates/QueueTrigger-JavaScript/index.js" target="Templates/QueueTrigger-JavaScript/index.js" />
+    <file src="Templates/QueueTrigger-JavaScript/metadata.json" target="Templates/QueueTrigger-JavaScript/metadata.json" />
+    <file src="Templates/QueueTrigger-JavaScript/readme.md" target="Templates/QueueTrigger-JavaScript/readme.md" />
+    <file src="Templates/QueueTrigger-JavaScript/sample.dat" target="Templates/QueueTrigger-JavaScript/sample.dat" />
+    <file src="Templates/QueueTrigger-Powershell/function.json" target="Templates/QueueTrigger-Powershell/function.json" />
+    <file src="Templates/QueueTrigger-Powershell/metadata.json" target="Templates/QueueTrigger-Powershell/metadata.json" />
+    <file src="Templates/QueueTrigger-Powershell/run.ps1" target="Templates/QueueTrigger-Powershell/run.ps1" />
+    <file src="Templates/QueueTrigger-Powershell/sample.dat" target="Templates/QueueTrigger-Powershell/sample.dat" />
+    <file src="Templates/TimerTrigger-CSharp/function.json" target="Templates/TimerTrigger-CSharp/function.json" />
+    <file src="Templates/TimerTrigger-CSharp/metadata.json" target="Templates/TimerTrigger-CSharp/metadata.json" />
+    <file src="Templates/TimerTrigger-CSharp/readme.md" target="Templates/TimerTrigger-CSharp/readme.md" />
+    <file src="Templates/TimerTrigger-CSharp/TimerTriggerCSharp.csx" target="Templates/TimerTrigger-CSharp/run.csx" />
+    <file src="Templates/TimerTrigger-CSharp/sample.dat" target="Templates/TimerTrigger-CSharp/sample.dat" />
+    <file src="Templates/TimerTrigger-JavaScript/function.json" target="Templates/TimerTrigger-JavaScript/function.json" />
+    <file src="Templates/TimerTrigger-JavaScript/index.js" target="Templates/TimerTrigger-JavaScript/index.js" />
+    <file src="Templates/TimerTrigger-JavaScript/metadata.json" target="Templates/TimerTrigger-JavaScript/metadata.json" />
+    <file src="Templates/TimerTrigger-JavaScript/readme.md" target="Templates/TimerTrigger-JavaScript/readme.md" />
+    <file src="Templates/TimerTrigger-JavaScript/sample.dat" target="Templates/TimerTrigger-JavaScript/sample.dat" />
+    <file src="Templates/TimerTrigger-Powershell/function.json" target="Templates/TimerTrigger-Powershell/function.json" />
+    <file src="Templates/TimerTrigger-Powershell/metadata.json" target="Templates/TimerTrigger-Powershell/metadata.json" />
+    <file src="Templates/TimerTrigger-Powershell/readme.md" target="Templates/TimerTrigger-Powershell/readme.md" />
+    <file src="Templates/TimerTrigger-Powershell/run.ps1" target="Templates/TimerTrigger-Powershell/run.ps1" />
+    <file src="Templates/TimerTrigger-Powershell/sample.dat" target="Templates/TimerTrigger-Powershell/sample.dat" />
+    
+    <file src="Templates/SqlQueueTrigger-CSharp/function.json" target="Templates/SqlQueueTrigger-CSharp/function.json" />
+    <file src="Templates/SqlQueueTrigger-CSharp/metadata.json" target="Templates/SqlQueueTrigger-CSharp/metadata.json" />
+    <file src="Templates/SqlQueueTrigger-CSharp/readme.md" target="Templates/SqlQueueTrigger-CSharp/readme.md" />
+    <file src="Templates/SqlQueueTrigger-CSharp/run.csx" target="Templates/SqlQueueTrigger-CSharp/run.csx" />
+    <file src="Templates/SqlQueueTrigger-CSharp/sample.dat" target="Templates/SqlQueueTrigger-CSharp/sample.dat" />
+    
+    <file src="Templates/SqlQueueTrigger-JavaScript/function.json" target="Templates/SqlQueueTrigger-JavaScript/function.json" />
+    <file src="Templates/SqlQueueTrigger-JavaScript/index.js" target="Templates/SqlQueueTrigger-JavaScript/index.js" />
+    <file src="Templates/SqlQueueTrigger-JavaScript/metadata.json" target="Templates/SqlQueueTrigger-JavaScript/metadata.json" />
+    <file src="Templates/SqlQueueTrigger-JavaScript/readme.md" target="Templates/SqlQueueTrigger-JavaScript/readme.md" />
+    <file src="Templates/SqlQueueTrigger-JavaScript/sample.dat" target="Templates/SqlQueueTrigger-JavaScript/sample.dat" />
+  </files>
+</package>
