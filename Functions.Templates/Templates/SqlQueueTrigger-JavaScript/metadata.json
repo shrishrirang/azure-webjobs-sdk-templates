@@ -1,0 +1,18 @@
+{
+    "defaultFunctionName": "SqlQueueTriggerJS",
+    "description": "$SqlQueueTrigger_description",
+    "name": "SQL Queue trigger",
+    "language": "JavaScript",
+    "category": [
+        "$temp_category_core",
+        "$temp_category_dataProcessing"
+    ],
+    "enabledInTryMode": true,
+    "userPrompt": [
+        "connection",
+        "databaseName",
+        "queueName",
+        "contractName",
+        "messageType"
+    ]
+}

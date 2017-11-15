@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="PkgInstall" InitialTargets="Clean;dotnetcliCheck;codeformatterCheck;nugetCheck;PortalTemplatesPkg">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />  
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -37,6 +37,7 @@
     <None Include="Documentation\ExcelOut.md" />
     <None Include="Documentation\ExcelIn.md" />
     <None Include="Documentation\GraphWebhookTrigger.md" />
+    <None Include="StandaloneTemplates.nuspec" />
     <None Include="Templates\BlobTrigger-CSharp\BlobTriggerCSharp.cs" />
     <None Include="Templates\CosmosDBTrigger-JavaScript\function.json" />
     <None Include="Templates\CosmosDBTrigger-JavaScript\metadata.json" />
@@ -628,6 +629,16 @@
     <Exec Command="..\tools\nuget.exe pack .\bin\Portal\temp\PortalTemplates.nuspec -Version $(TemplateVersion) -OutputDirectory .\bin\Portal\temp\nuget\" />
     <Copy SourceFiles=".\bin\Portal\temp\nuget\Azure.Functions.Ux.Templates.$(TemplateVersion).nupkg" DestinationFiles=".\bin\Portal\Nuget\Azure.Functions.Ux.Templates.$(TemplateVersion).nupkg" />
     <RemoveDir Directories=".\bin\Portal\temp" />
+  </Target>
+  <Target Name="StandaloneTemplatesPkg">
+    <Exec Command="..\tools\cli\dotnet.exe new -i .\" />
+    <Exec Command="..\tools\cli\dotnet.exe new functions -o .\bin\Standalone\temp --force" IgnoreExitCode="true" />
+    <Exec Command="..\tools\CodeFormatter\CodeFormatter.exe ..\tools\codeFormat.csproj /nocopyright  /rule-:NewLineAbove,ExplicitVisibility,IllegalHeaders,FieldNames,ExplicitThis,BraceNewLine,UsingLocation,UnicodeLiterals,ReadonlyFields /verbose" IgnoreExitCode="true" />
+    <Delete Files=".\bin\Standalone\Functions.Templates.csproj" />
+    <Exec Command="for /R .\bin\Standalone\temp\Templates\ %%x in (*.cs) do ren &quot;%%x&quot; *.csx" />
+    <Exec Command="..\tools\nuget.exe pack .\bin\Standalone\temp\StandaloneTemplates.nuspec -Version $(TemplateVersion) -OutputDirectory .\bin\Standalone\temp\nuget\" />
+    <Copy SourceFiles=".\bin\Standalone\temp\nuget\Azure.Functions.Ux.Templates.$(TemplateVersion).nupkg" DestinationFiles=".\bin\Standalone\Nuget\Azure.Functions.Ux.Templates.$(TemplateVersion).nupkg" />
+    <RemoveDir Directories=".\bin\Standalone\temp" />
   </Target>
   <Target Name="PkgInstall" DependsOnTargets="PortalTemplatesPkg">
     <Exec Command="..\tools\nuget.exe install Azure.Functions.Ux.Templates -Version $(TemplateVersion) -Source $(MSBuildProjectDirectory)\bin\Portal\Nuget -OutputDirectory .\bin\Portal\Release -ExcludeVersion" />
