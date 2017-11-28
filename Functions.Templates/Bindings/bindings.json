@@ -431,6 +431,7 @@
         },
         {
           "name": "connection",
+          "value": "string",
           "resource": "Storage",
           "required": true,
           "label": "[variables('storageConnStringLabel')]",
