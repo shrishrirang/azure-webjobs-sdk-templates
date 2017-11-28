@@ -10,7 +10,6 @@
     "enabledInTryMode": true,
     "userPrompt": [
         "connection",
-        "databaseName",
         "queueName",
         "contractName",
         "messageType"

@@ -684,14 +684,6 @@
                 "help": "$sqlQueueTrigger_name_help"
             },
             {
-                "name": "databaseName",
-                "value": "string",
-                "defaultValue": "",
-                "required": false,
-                "label": "$sqlQueueTrigger_database_label",
-                "help": "$sqlQueueTrigger_database_help"
-            },
-            {
                 "name": "queueName",
                 "value": "string",
                 "defaultValue": "MyQueue",
