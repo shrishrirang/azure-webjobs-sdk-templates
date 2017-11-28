@@ -104,10 +104,11 @@
         {
           "name": "connection",
           "value": "string",
-          "defaultValue": "",
+          "resource": "Storage",
           "required": true,
           "label": "[variables('storageConnStringLabel')]",
-          "help": "[variables('appSettingsHelp')]"
+          "help": "[variables('appSettingsHelp')]",
+          "placeholder": "[variables('selectConnection')]"
         }
       ]
     },
@@ -149,10 +150,11 @@
         {
           "name": "connection",
           "value": "string",
-          "defaultValue": "",
+          "resource": "Storage",
           "required": true,
           "label": "[variables('storageConnStringLabel')]",
-          "help": "[variables('appSettingsHelp')]"
+          "help": "[variables('appSettingsHelp')]",
+          "placeholder": "[variables('selectConnection')]"
         }
       ]
     },
@@ -204,10 +206,11 @@
         {
           "name": "connection",
           "value": "string",
-          "defaultValue": "",
+          "resource": "Storage",
           "required": true,
           "label": "[variables('storageConnStringLabel')]",
-          "help": "[variables('appSettingsHelp')]"
+          "help": "[variables('appSettingsHelp')]",
+          "placeholder": "[variables('selectConnection')]"
         }
       ]
     },
@@ -249,10 +252,11 @@
         {
           "name": "connection",
           "value": "string",
-          "defaultValue": "",
+          "resource": "Storage",
           "required": true,
           "label": "[variables('storageConnStringLabel')]",
-          "help": "[variables('appSettingsHelp')]"
+          "help": "[variables('appSettingsHelp')]",
+          "placeholder": "[variables('selectConnection')]"
         }
       ]
     },
@@ -294,10 +298,11 @@
         {
           "name": "connection",
           "value": "string",
-          "defaultValue": "",
+          "resource": "Storage",
           "required": true,
           "label": "[variables('storageConnStringLabel')]",
-          "help": "[variables('appSettingsHelp')]"
+          "help": "[variables('appSettingsHelp')]",
+          "placeholder": "[variables('selectConnection')]"
         }
       ]
     }
