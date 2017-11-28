@@ -718,10 +718,11 @@
             {
                 "name": "connection",
                 "value": "string",
-                "defaultValue": "AzureWebJobsSqlQueue",
+                "resource": "Sql",
                 "required": true,
                 "label": "$sqlQueueTrigger_connectionString_label",
-                "help": "$sqlQueueTrigger_connectionString_help"
+                "help": "$sqlQueueTrigger_connectionString_help",
+                "placeholder": "[variables('selectConnection')]"
             }
         ]
     }    
