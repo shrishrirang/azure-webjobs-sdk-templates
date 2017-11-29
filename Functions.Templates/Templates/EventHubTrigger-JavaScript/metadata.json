@@ -11,6 +11,7 @@
   "enabledInTryMode": false,
   "userPrompt": [
     "connection",
+    "storageConnection",
     "path",
     "consumerGroup"
   ]

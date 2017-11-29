@@ -87,6 +87,15 @@
           "placeholder": "[variables('selectConnection')]"
         },
         {
+          "name": "storageConnection",
+          "value": "string",
+          "resource": "Storage",
+          "required": true,
+          "label": "[variables('storageConnStringLabel')]",
+          "help": "[variables('appSettingsHelp')]",
+          "placeholder": "[variables('selectConnection')]"
+        },
+        {
           "name": "path",
           "value": "string",
           "defaultValue": "myeventhub",
