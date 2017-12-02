@@ -701,20 +701,12 @@
                 "help": "$sqlQueueTrigger_queueName_help"
             },
             {
-                "name": "contractName",
-                "value": "string",
-                "defaultValue": "MyContract",
-                "required": true,
-                "label": "$sqlQueueTrigger_contractName_label",
-                "help": "$sqlQueueTrigger_contractName_help"
-            },
-            {
-                "name": "messageType",
+                "name": "messageDataType",
                 "value": "string",
                 "defaultValue": "VarChar(max)",
                 "required": false,
-                "label": "$sqlQueueTrigger_messageType_label",
-                "help": "$sqlQueueTrigger_messageType_help"
+                "label": "$sqlQueueTrigger_messageDataType_label",
+                "help": "$sqlQueueTrigger_messageDataType_help"
             },
             {
                 "name": "connection",

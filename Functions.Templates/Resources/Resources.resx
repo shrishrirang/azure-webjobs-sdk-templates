@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -350,12 +350,6 @@
   <data name="sqlQueueTrigger_queueName_help" xml:space="preserve">
     <value>Name of the queue from which the message will be read</value>
   </data>
-  <data name="sqlQueueTrigger_contractName_label" xml:space="preserve">
-    <value>Contract name</value>
-  </data>
-  <data name="sqlQueueTrigger_contractName_help" xml:space="preserve">
-    <value>Name of the SQL contract to use for reading the message from the queue</value>
-  </data>
   <data name="sqlQueueTrigger_connectionString_label" xml:space="preserve">
     <value>SQL connection string name</value>
   </data>
@@ -368,10 +362,10 @@
   <data name="sqlQueueTrigger_database_help" xml:space="preserve">
     <value>Name of the SQL Database to use. If the connection string already defines it, this can be empty. If not, this must to be defined. If both of them are defined, this property will override the database name specified by the connection string.</value>
   </data>
-  <data name="sqlQueueTrigger_messageType_label" xml:space="preserve">
+  <data name="sqlQueueTrigger_messageDataType_label" xml:space="preserve">
     <value>SQL data type of message</value>
   </data>
-  <data name="sqlQueueTrigger_messageType_help" xml:space="preserve">
+  <data name="sqlQueueTrigger_messageDataType_help" xml:space="preserve">
     <value>The SQL data type of the message that will be read from the queue. Example: varchar (max) </value>
   </data>
 
