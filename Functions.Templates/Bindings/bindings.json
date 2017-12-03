@@ -701,14 +701,6 @@
                 "help": "$sqlQueueTrigger_queueName_help"
             },
             {
-                "name": "messageDataType",
-                "value": "string",
-                "defaultValue": "VarChar(max)",
-                "required": false,
-                "label": "$sqlQueueTrigger_messageDataType_label",
-                "help": "$sqlQueueTrigger_messageDataType_help"
-            },
-            {
                 "name": "connection",
                 "value": "string",
                 "resource": "Sql",
